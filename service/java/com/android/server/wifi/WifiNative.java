@@ -2818,6 +2818,7 @@ public class WifiNative {
     public boolean requestAnqp(
             @NonNull String ifaceName, String bssid, Set<Integer> anqpIds,
             Set<Integer> hs20Subtypes) {
+        /*
         if (bssid == null || ((anqpIds == null || anqpIds.isEmpty())
                 && (hs20Subtypes == null || hs20Subtypes.isEmpty()))) {
             Log.e(TAG, "Invalid arguments for ANQP request.");
@@ -2831,6 +2832,8 @@ public class WifiNative {
         hs20SubtypeList.addAll(hs20Subtypes);
         return mSupplicantStaIfaceHal.initiateAnqpQuery(
                 ifaceName, bssid, anqpIdList, hs20SubtypeList);
+        */
+        return false;
     }
 
     /**

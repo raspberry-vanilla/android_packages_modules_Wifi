@@ -1660,7 +1660,8 @@ public class ConcreteClientModeManager implements ClientModeManager {
 
     @Override
     public boolean requestAnqp(String bssid, Set<Integer> anqpIds, Set<Integer> hs20Subtypes) {
-        return getClientMode().requestAnqp(bssid, anqpIds, hs20Subtypes);
+        //return getClientMode().requestAnqp(bssid, anqpIds, hs20Subtypes);
+        return false;
     }
 
     @Override
