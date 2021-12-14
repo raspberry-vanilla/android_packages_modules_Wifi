@@ -78,6 +78,7 @@ public class PasspointEventHandler {
      * @return true if request is sent successfully, false otherwise.
      */
     public boolean requestANQP(long bssid, List<Constants.ANQPElementType> elements) {
+        /*
         Pair<Set<Integer>, Set<Integer>> querySets = buildAnqpIdSet(elements);
         if (bssid == 0 || querySets == null) return false;
         if (!mWifiInjector.getActiveModeWarden().getPrimaryClientModeManager().requestAnqp(
@@ -87,6 +88,8 @@ public class PasspointEventHandler {
         }
         Log.d(Utils.hs2LogTag(getClass()), "ANQP initiated on " + Utils.macToString(bssid));
         return true;
+        */
+        return false;
     }
 
     /**
