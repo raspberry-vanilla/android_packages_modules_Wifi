@@ -1832,7 +1832,8 @@ public class ClientModeImpl extends StateMachine implements ClientMode {
 
     @Override
     public boolean requestAnqp(String bssid, Set<Integer> anqpIds, Set<Integer> hs20Subtypes) {
-        return mWifiNative.requestAnqp(mInterfaceName, bssid, anqpIds, hs20Subtypes);
+        //return mWifiNative.requestAnqp(mInterfaceName, bssid, anqpIds, hs20Subtypes);
+        return false;
     }
 
     @Override
